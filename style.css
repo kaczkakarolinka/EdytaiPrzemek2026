@@ -1,5 +1,634 @@
-.header-title {
-    text-align: center;
-    margin: 0 auto;
-    font-size: 40px;
+body {
+    margin: 0;
 }
+
+.header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  /* HAMBURGER */
+  .hamburger {
+    position: fixed;
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    transition: 0.3s;
+    box-shadow: 1px 1px 5px #000000;
+  }
+  
+  /* MENU */
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 20vh;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1));
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 5rem 1rem;
+    transition: 0.3s;
+  }
+  
+  .menu a {
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color:white;
+    width: fit-content;
+    text-shadow: 1px 1px 5px #000000;
+  }
+  
+  /* AKTYWNE */
+  .menu.active {
+    right: 0;
+  }
+
+  /* HERO */
+
+#heropicture {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("Edyta-i-Przemek-hero.jpg");
+    background-size: cover;      /* wypełnia cały ekran */
+    background-position: center; /* centruje */
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+.center-text {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#hero-text-1 {
+    font-size: 7vw;
+    text-align: center;
+    color: white;
+    margin: 5px;
+    opacity: 0.7;
+}
+
+#hero-text-2 {
+    font-size: 3vw;
+    text-align: center;
+    color: white;
+    margin: 5px;
+    opacity: 0.7;
+}
+
+#hero-text-3 {
+    font-size: 3vw;
+    text-align: center;
+    color: white;
+    margin: 5px;
+    opacity: 0.7;
+}
+
+    /* SEKCJA 1 */
+
+    .header-title {
+        text-align: center;
+        padding: 25px auto;
+        margin-top: 8vw;
+        background-color: #fff;
+    }
+
+    #lokalizacja-hero {
+        width: 100vw;
+        height: 10vw;
+        background-image: url("Lokalizacja-hero.jpg");
+        background-size: cover;      /* wypełnia cały ekran */
+        background-position: center; /* centruje */
+        background-repeat: no-repeat;
+        margin: 5vw 0;
+        box-shadow: 1px 1px 5px #000000;
+    }
+
+    .lokalizacja-center-text {
+        width: 100vw;
+        height: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lokalizacja-center-text p {
+        font-size: 3vw;
+        text-align: center;
+        color: white;
+        margin: 5px;
+        opacity: 0.7;
+    }
+
+    .lokalizacja-title {
+        color: #2e2d2d;
+        font-size: 2vw;
+    }
+
+    .address {
+        color: #2e2d2d;
+        font-size: 2vw;
+    }
+
+    .lokalizacja-text{
+        color: #2e2d2d;
+        font-size: 1.5vw;
+        margin: 5vw 15vw;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    /* RSVP */
+
+    #rsvp-hero {
+        width: 100vw;
+        height: 10vw;
+        background-image: url("RSVP-hero.jpg");
+        background-size: cover;      /* wypełnia cały ekran */
+        background-position: center; /* centruje */
+        background-repeat: no-repeat;
+        margin: 5vw 0;
+        box-shadow: 1px 1px 5px #000000;
+    }
+
+    .rsvp-center-text {
+        width: 100vw;
+        height: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rsvp-center-text p {
+        font-size: 3vw;
+        text-align: center;
+        color: white;
+        margin: 5px;
+        opacity: 0.7;
+    }
+
+    .RSVP-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #RSVP-text {
+        width: 40vw;
+        height: 25vw;
+        color: #2e2d2d;
+        font-size: 1.5vw;
+        margin: 5vw 10vw;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+
+    #RSVP-QR {
+        width: 40vw;
+        height: 25vw;
+    }
+
+    #RSVP-image {
+        width: 8vw;
+        height: 8vw;
+        background-image: url(RSVP-hero.jpg);
+        background-size: cover;      /* wypełnia cały ekran */
+        background-position: center; /* centruje */
+        background-repeat: no-repeat;
+        padding: 10vw;
+    }
+
+    /* Kontakt */
+
+    #kontakt-hero {
+        width: 100vw;
+        height: 10vw;
+        background-image: url("kontakt-hero.jpg");
+        background-size: cover;      /* wypełnia cały ekran */
+        background-position: center; /* centruje */
+        background-repeat: no-repeat;
+        margin: 5vw 0;
+        box-shadow: 1px 1px 5px #000000;
+    }
+
+    .kontakt-center-text {
+        width: 100vw;
+        height: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kontakt-center-text p {
+        font-size: 3vw;
+        text-align: center;
+        color: white;
+        margin: 5px;
+        opacity: 0.7;
+    }
+
+    .kontakt-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #column1 {
+        width: 20vw;
+        height: 20vw;
+        color: #2e2d2d;
+        font-size: 1.5vw;
+        text-align: left;
+        line-height: 1.5;
+        padding-top: 5vw 0;
+    }
+
+    #column2 {
+        width: 20vw;
+        height: 20vw;
+        color: #2e2d2d;
+        font-size: 1.5vw;
+        text-align: left;
+        line-height: 1.5;
+        padding: 5vw 0;
+    }
+
+    #column3 {
+        width: 20vw;
+        height: 20vw;
+        background-image: url(kontakt-hero.jpg);
+        background-size: cover;      /* wypełnia cały ekran */
+        background-position: center; /* centruje */
+        background-repeat: no-repeat;
+        margin-top: 5vw 0;
+    }
+
+
+    a {
+        color: #2e2d2d;
+    }
+
+    /* Nocleg */
+
+    #nocleg-hero {
+        width: 100vw;
+        height: 10vw;
+        background-image: url("nocleg-hero.jpeg");
+        background-size: cover;      /* wypełnia cały ekran */
+        background-position: center; /* centruje */
+        background-repeat: no-repeat;
+        margin: 5vw 0;
+        box-shadow: 1px 1px 5px #000000;
+    }
+
+    .nocleg-center-text {
+        width: 100vw;
+        height: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nocleg-center-text p {
+        font-size: 3vw;
+        text-align: center;
+        color: white;
+        margin: 5px;
+        opacity: 0.7;
+    }
+
+    .nocleg-text p {
+        color: #2e2d2d;
+        font-size: 1.5vw;
+        margin: 5vw 10vw;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    /* Harmonogram */
+
+    #harmonogram-hero {
+        width: 100vw;
+        height: 10vw;
+        background-image: url("nocleg-hero.jpeg");
+        background-size: cover;      /* wypełnia cały ekran */
+        background-position: center; /* centruje */
+        background-repeat: no-repeat;
+        margin: 5vw 0;
+        box-shadow: 1px 1px 5px #000000;
+    }
+
+    .harmonogram-center-text {
+        width: 100vw;
+        height: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .harmonogram-center-text p {
+        font-size: 3vw;
+        text-align: center;
+        color: white;
+        margin: 5px;
+        opacity: 0.7;
+    }
+
+    .harmonogram-text p {
+        color: #2e2d2d;
+        font-size: 1.5vw;
+        margin: 5vw 10vw;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    #center-map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4vw;
+    }
+
+     /* Parking */
+
+     #parking-hero {
+        width: 100vw;
+        height: 10vw;
+        background-image: url("nocleg-hero.jpeg");
+        background-size: cover;      /* wypełnia cały ekran */
+        background-position: center; /* centruje */
+        background-repeat: no-repeat;
+        margin: 5vw 0;
+        box-shadow: 1px 1px 5px #000000;
+    }
+
+    .parking-center-text {
+        width: 100vw;
+        height: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parking-center-text p {
+        font-size: 3vw;
+        text-align: center;
+        color: white;
+        margin: 5px;
+        opacity: 0.7;
+    }
+
+    .parking-text p {
+        color: #2e2d2d;
+        font-size: 1.5vw;
+        margin: 5vw 10vw;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    #center-map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4vw;
+    }
+
+    /* Dzieci */
+
+    #dzieci-hero {
+        width: 100vw;
+        height: 10vw;
+        background-image: url("nocleg-hero.jpeg");
+        background-size: cover;      /* wypełnia cały ekran */
+        background-position: center; /* centruje */
+        background-repeat: no-repeat;
+        margin: 5vw 0;
+        box-shadow: 1px 1px 5px #000000;
+    }
+
+    .dzieci-center-text {
+        width: 100vw;
+        height: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dzieci-center-text p {
+        font-size: 3vw;
+        text-align: center;
+        color: white;
+        margin: 5px;
+        opacity: 0.7;
+    }
+
+    .dzieci-text p {
+        color: #2e2d2d;
+        font-size: 1.5vw;
+        margin: 5vw 10vw;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    /* Dress Code */
+
+    #dresscode-hero {
+        width: 100vw;
+        height: 10vw;
+        background-image: url("nocleg-hero.jpeg");
+        background-size: cover;      /* wypełnia cały ekran */
+        background-position: center; /* centruje */
+        background-repeat: no-repeat;
+        margin: 5vw 0;
+        box-shadow: 1px 1px 5px #000000;
+    }
+
+    .dresscode-center-text {
+        width: 100vw;
+        height: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dresscode-center-text p {
+        font-size: 3vw;
+        text-align: center;
+        color: white;
+        margin: 5px;
+        opacity: 0.7;
+    }
+
+    .dress-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #dress-text {
+        width: 40vw;
+        height: 25vw;
+        color: #2e2d2d;
+        font-size: 1.5vw;
+        margin: 5vw 10vw;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+
+    #dress-QR {
+        width: 40vw;
+        height: 25vw;
+    }
+
+    #dress-image {
+        width: 8vw;
+        height: 8vw;
+        background-image: url(RSVP-hero.jpg);
+        background-size: cover;      /* wypełnia cały ekran */
+        background-position: center; /* centruje */
+        background-repeat: no-repeat;
+        padding: 10vw;
+    }
+
+    /* FAQ */
+    #faq-hero {
+        width: 100vw;
+        height: 10vw;
+        background-image: url("nocleg-hero.jpeg");
+        background-size: cover;      /* wypełnia cały ekran */
+        background-position: center; /* centruje */
+        background-repeat: no-repeat;
+        margin: 5vw 0;
+        box-shadow: 1px 1px 5px #000000;
+    }
+
+    .faq-center-text {
+        width: 100vw;
+        height: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faq-center-text p {
+        font-size: 3vw;
+        text-align: center;
+        color: white;
+        margin: 5px;
+        opacity: 0.7;
+    }
+
+
+    /* akordeon */
+
+    #acc {
+        width: 50vw;
+        margin: auto;
+    }
+
+    .accordion {
+        background-color: #FFFFFF;
+        color: #2e2d2d;
+        cursor: pointer;
+        padding: 20px 25px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        border-bottom: 1px solid #faeac9;
+        font-size: 1.5vw;
+        font-family: inherit;
+      }
+      
+      .active1, .accordion:hover {
+        color: #2c772c;
+      }
+      .panel {
+        padding: 0px 25px;
+        background-color: white;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+      .panel p{
+        padding: 20px 0px;
+        color: #2e2d2d;
+        font-size: 1.2vw;
+        text-align: left;
+        line-height: 1.7;
+        font-family: inherit;
+      }
+      .accordion:after {
+        content: "\002B"; /* Unicode character for "plus" sign (+) */
+        font-size: 18px;
+        color: #2e2d2d;
+        float: right;
+        margin-left: 5px;
+      }
+      .active1:after {
+        content: "\2212"; /* Unicode character for "minus" sign (-) */
+        color: #2c772c;
+      }
+
+      .uwaga {
+        color: #2e2d2d;
+        font-size: 1.5vw;
+        margin: 5vw;
+        text-align: center;
+        line-height: 1.5;
+      }
+
+      #bye-hero {
+        width: 100vw;
+        height: 30vw;
+        background-image: url("nocleg-hero.jpeg");
+        background-size: cover;      /* wypełnia cały ekran */
+        background-position: center; /* centruje */
+        background-repeat: no-repeat;
+        margin-top: 5vw;
+        box-shadow: 1px 1px 5px #000000;
+    }
+
+    .bye-center-text {
+        width: 100vw;
+        height: 30vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bye-center-text p {
+        font-size: 3vw;
+        text-align: center;
+        color: white;
+        margin: 5px;
+        opacity: 0.7;
+    }
+
