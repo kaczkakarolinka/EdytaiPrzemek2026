@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+button {
+    align-items: flex-end;
+}
+
 .header {
     display: flex;
     justify-content: right;
