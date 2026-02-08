@@ -1,9 +1,12 @@
 body {
     margin: 0;
+    font-family: "Outfit", sans-serif;
+    font-weight: 200;
 }
 
+
 button {
-    align-items: flex-end !important;
+    align-items: flex-end;
 }
 
 .header {
@@ -122,9 +125,9 @@ button {
     }
 
     #lokalizacja-hero {
-        width: 100vw;
+        width: 90vw;
         height: 10vw;
-        background-image: url("Lokalizacja-hero.jpg");
+        background-image: url("RSVP-hero.jpg");
         background-size: cover;      /* wypełnia cały ekran */
         background-position: center; /* centruje */
         background-repeat: no-repeat;
@@ -145,7 +148,7 @@ button {
         text-align: center;
         color: white;
         margin: 5px;
-        opacity: 0.7;
+        text-shadow: 1px 1px 5px #000000;
     }
 
     .lokalizacja-title {
@@ -162,8 +165,9 @@ button {
         color: #2e2d2d;
         font-size: 1.5vw;
         margin: 5vw 15vw;
-        text-align: left;
+        text-align: center;
         line-height: 1.5;
+        letter-spacing: 1.5px;
     }
 
     /* RSVP */
@@ -192,7 +196,7 @@ button {
         text-align: center;
         color: white;
         margin: 5px;
-        opacity: 0.7;
+        text-shadow: 1px 1px 5px #000000;
     }
 
     .RSVP-container {
@@ -209,6 +213,7 @@ button {
         margin: 5vw 10vw;
         text-align: left;
         line-height: 1.5;
+        letter-spacing: 1.5px;
     }
 
 
@@ -253,7 +258,7 @@ button {
         text-align: center;
         color: white;
         margin: 5px;
-        opacity: 0.7;
+        text-shadow: 1px 1px 5px #000000;
     }
 
     .kontakt-container {
@@ -270,6 +275,7 @@ button {
         text-align: left;
         line-height: 1.5;
         padding-top: 5vw 0;
+        letter-spacing: 1.5px;
     }
 
     #column2 {
@@ -280,6 +286,7 @@ button {
         text-align: left;
         line-height: 1.5;
         padding: 5vw 0;
+        letter-spacing: 1.5px;
     }
 
     #column3 {
@@ -290,6 +297,13 @@ button {
         background-position: center; /* centruje */
         background-repeat: no-repeat;
         margin-top: 5vw 0;
+        border-radius: 50%;
+    }
+
+    .kontakt-hl {
+        font-size: 1.8vw;
+        letter-spacing: 2.5px;
+        color: #2e2d2d;
     }
 
 
@@ -323,7 +337,7 @@ button {
         text-align: center;
         color: white;
         margin: 5px;
-        opacity: 0.7;
+        text-shadow: 1px 1px 5px #000000;
     }
 
     .nocleg-text p {
@@ -332,6 +346,7 @@ button {
         margin: 5vw 10vw;
         text-align: center;
         line-height: 1.5;
+        letter-spacing: 1.5px;
     }
 
     /* Harmonogram */
@@ -360,7 +375,7 @@ button {
         text-align: center;
         color: white;
         margin: 5px;
-        opacity: 0.7;
+        text-shadow: 1px 1px 5px #000000;
     }
 
     .harmonogram-text p {
@@ -369,6 +384,7 @@ button {
         margin: 5vw 10vw;
         text-align: center;
         line-height: 1.5;
+        letter-spacing: 1.5px;
     }
 
     #center-map {
@@ -404,7 +420,7 @@ button {
         text-align: center;
         color: white;
         margin: 5px;
-        opacity: 0.7;
+        text-shadow: 1px 1px 5px #000000;
     }
 
     .parking-text p {
@@ -413,6 +429,7 @@ button {
         margin: 5vw 10vw;
         text-align: center;
         line-height: 1.5;
+        letter-spacing: 1.5px;
     }
 
     #center-map {
@@ -448,7 +465,7 @@ button {
         text-align: center;
         color: white;
         margin: 5px;
-        opacity: 0.7;
+        text-shadow: 1px 1px 5px #000000;
     }
 
     .dzieci-text p {
@@ -457,6 +474,7 @@ button {
         margin: 5vw 10vw;
         text-align: center;
         line-height: 1.5;
+        letter-spacing: 1.5px;
     }
 
     /* Dress Code */
@@ -485,7 +503,7 @@ button {
         text-align: center;
         color: white;
         margin: 5px;
-        opacity: 0.7;
+        text-shadow: 1px 1px 5px #000000;
     }
 
     .dress-container {
@@ -502,11 +520,12 @@ button {
         margin: 5vw 10vw;
         text-align: left;
         line-height: 1.5;
+        letter-spacing: 1.5px;
     }
 
 
     #dress-QR {
-        width: 40vw;
+        width: 30vw;
         height: 25vw;
     }
 
@@ -518,6 +537,7 @@ button {
         background-position: center; /* centruje */
         background-repeat: no-repeat;
         padding: 10vw;
+        border-radius: 50%;
     }
 
     /* FAQ */
@@ -545,7 +565,7 @@ button {
         text-align: center;
         color: white;
         margin: 5px;
-        opacity: 0.7;
+        text-shadow: 1px 1px 5px #000000;
     }
 
 
@@ -569,6 +589,7 @@ button {
         border-bottom: 1px solid #faeac9;
         font-size: 1.5vw;
         font-family: inherit;
+        letter-spacing: 1.5px;
       }
       
       .active1, .accordion:hover {
@@ -605,8 +626,13 @@ button {
         color: #2e2d2d;
         font-size: 1.5vw;
         margin: 5vw;
-        text-align: center;
+        text-align: left;
         line-height: 1.5;
+        word-spacing: 2;
+      }
+
+      .uwaga strong {
+        font-size: 1.7vw;
       }
 
       #bye-hero {
@@ -633,6 +659,6 @@ button {
         text-align: center;
         color: white;
         margin: 5px;
-        opacity: 0.7;
+        text-shadow: 1px 1px 5px #000000;
     }
 

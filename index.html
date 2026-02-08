@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playwrite+NZ+Basic:wght@100..400&display=swap" rel="stylesheet">
     <title>Edyta i Przemysław</title>
 </head>
 <body>
@@ -42,11 +44,12 @@
     <div id="lokalizacja-hero"><div class="lokalizacja-center-text"><p>Lokalizacja ceremonii i wesela</p></div></div>
 
     <div class="header-title">
-        <p class="address">Dwór w Modlnicy<br> ul. św. Wojciecha 62,<br> 32-085 Modlnica</p>
+        
         <p class="lokalizacja-text">Mamy zaszczyt zaprosić Was do wyjątkowego miejsca, którym jest Dworek w Modlnicy. 
             Przepiękny, zabytkowy dwór otoczony wyjątkową scenerią historycznego parku. 
             Uroczystość zaplanowana jest w charakterze plenerowym. 
             Wesele natomiast odbędzie się w otwartym namiocie, zlokalizowanym na terenie dworu.</p>
+        <p class="address">Dwór w Modlnicy<br> ul. św. Wojciecha 62,<br> 32-085 Modlnica</p>
     </div>
 
     <div id="rsvp-hero"><div class="rsvp-center-text"><p>RSVP</p></div></div>
@@ -66,15 +69,15 @@
     
     <div class="kontakt-container">
         <div id="column1">
-            <strong>Pani Młoda</strong><br>
+            <div class="kontakt-hl"><strong>Pani Młoda</strong><br></div>
             Edyta Kordek <br>
             Telefon: <a href="tel:723481061">723 481 061</a><br><br>
-            <strong>Pan Młody</strong> <br>
+            <div class="kontakt-hl"><strong>Pan Młody</strong> <br></div>
             Przemysław Kroczek<br>
             Telefon: <a href="tel:785034466">785 034 466</a>
         </div>
         <div id="column2">
-            <strong>Świadkowie</strong><br><br>
+            <div class="kontakt-hl"> <strong>Świadkowie</strong><br></div>
             Katarzyna Zuziak<br> 
             Telefon: <a href="tel:506608413">506 608 413</a><br><br>
             Paweł Kroczek<br>
@@ -128,14 +131,14 @@
 
     <div id="dresscode-hero"><div class="dresscode-center-text"><p>Dress Code</p></div></div>    
     <div class="dress-container">
+        <div id="dress-QR">
+            <div id="dress-image"></div>
+        </div>
         <div id="dress-text">
             Uroczystość odbędzie się w zabytkowym parku, wśród zieleni i natury. 
             Aranżacja wesela zostanie wzbogacona o akcenty zieleni, dlatego będzie nam miło, jeśli znajdą one swoje odzwierciedlenie w Waszych stylizacjach. 
             Ze względu na trawiaste podłoże uprzejmie prosimy o uwzględnienie tego w doborze obuwia, które może zapadać się w trawie.<br> 
             Liczymy na piękną pogodę, ale pamiętajcie, aby ubiór był odpowiedni do panujących warunków.
-        </div>
-        <div id="dress-QR">
-            <div id="dress-image"></div>
         </div>
     </div>
 
@@ -210,7 +213,7 @@
 
         <div class="uwaga"><strong>UWAGA!</strong> <br><br>
             Uprasza się o nie wnoszenie napojów oraz jedzenia do wnętrza dworku, oraz zachowanie ostrożności podczas korzystania z pomieszczeń dostępnych na terenie dworu. 
-            W środku panuje całkowity zakaz palenia wyrobów tytoniowych i e-papierosów itp.</div>
+            <br>W środku panuje całkowity zakaz palenia wyrobów tytoniowych i e-papierosów itp.</div>
     </div>
 
     <div id="bye-hero"><div class="bye-center-text"><p>DO ZOBACZENIA!</p></div></div>
