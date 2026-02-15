@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
   var menu = document.querySelector('.menu');
 
   hamburger.onclick = function () {
-    menu.classList.toggle('active')};
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('cheese');};
+
 
     var acc = document.getElementsByClassName("accordion");
 var i;

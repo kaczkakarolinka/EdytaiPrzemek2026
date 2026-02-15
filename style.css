@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    font-family: "Outfit", sans-serif;
-    font-weight: 200;
+    font-family: "Times New Roman", sans-serif;
+    background-color: #f4efe6;
 }
 
 
@@ -35,9 +35,9 @@ button {
   .hamburger span {
     height: 3px;
     width: 100%;
-    background: #fff;
+    background: #f4efe6;
     transition: 0.3s;
-    box-shadow: 1px 1px 5px #000000;
+    border: 1px solid #605032;
   }
   
   /* MENU */
@@ -47,27 +47,30 @@ button {
     right: -100%;
     width: 20vh;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0);
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1));
+    background-color: #f4efe6;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 5rem 1rem;
     transition: 0.3s;
+    box-shadow: 1px 1px 5px #000000;
   }
   
   .menu a {
     margin-bottom: 1.5rem;
     text-decoration: none;
     font-size: 1.3rem;
-    color:white;
+    color:#605032;
     width: fit-content;
-    text-shadow: 1px 1px 5px #000000;
   }
   
   /* AKTYWNE */
   .menu.active {
     right: 0;
+  }
+
+  .hamburger.cheese span {
+    background: #605032;
   }
 
   /* HERO */
@@ -94,26 +97,60 @@ button {
 #hero-text-1 {
     font-size: 7vw;
     text-align: center;
-    color: white;
+    color: #f4efe6;
     margin: 5px;
-    opacity: 0.7;
+    text-shadow: 1px 1px 5px #000000;
+
 }
 
 #hero-text-2 {
     font-size: 3vw;
     text-align: center;
-    color: white;
+    color: #f4efe6;
     margin: 5px;
-    opacity: 0.7;
+    text-shadow: 1px 1px 5px #000000;
+
 }
 
 #hero-text-3 {
     font-size: 3vw;
     text-align: center;
-    color: white;
+    color: #f4efe6;
     margin: 5px;
-    opacity: 0.7;
+    text-shadow: 1px 1px 5px #000000;
+
 }
+
+            /* HERO MOBILE */
+
+            @media only screen and (max-width: 767px) {
+                #hero-text-1 {
+                    font-size: 15vw;
+                    text-align: center;
+                    color: #f4efe6;
+                    margin: 5px;
+                    text-shadow: 1px 1px 5px #000000;
+                
+                }
+                
+                #hero-text-2 {
+                    font-size: 8vw;
+                    text-align: center;
+                    color: #f4efe6;
+                    margin: 5px;
+                    text-shadow: 1px 1px 5px #000000;
+                
+                }
+                
+                #hero-text-3 {
+                    font-size: 8vw;
+                    text-align: center;
+                    color: #f4efe6;
+                    margin: 5px;
+                    text-shadow: 1px 1px 5px #000000;
+                
+                }
+            }
 
     /* SEKCJA 1 */
 
@@ -121,13 +158,12 @@ button {
         text-align: center;
         padding: 25px auto;
         margin-top: 8vw;
-        background-color: #fff;
     }
 
     #lokalizacja-hero {
-        width: 90vw;
-        height: 10vw;
-        background-image: url("RSVP-hero.jpg");
+        width: 100vw;
+        height: 30vw;
+        background-image: url("hero-1.png");
         background-size: cover;      /* wypełnia cały ekran */
         background-position: center; /* centruje */
         background-repeat: no-repeat;
@@ -136,8 +172,8 @@ button {
     }
 
     .lokalizacja-center-text {
-        width: 90vw;
-        height: 10vw;
+        width: 100vw;
+        height: 30vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -146,7 +182,7 @@ button {
     .lokalizacja-center-text p {
         font-size: 3vw;
         text-align: center;
-        color: white;
+        color: #f4efe6;
         margin: 5px;
         text-shadow: 1px 1px 5px #000000;
     }
@@ -167,15 +203,58 @@ button {
         margin: 5vw 15vw;
         text-align: center;
         line-height: 1.5;
-        letter-spacing: 1.5px;
     }
+
+            /* MOBILE LOKALIZACJA */
+            @media only screen and (max-width: 767px) {
+                #lokalizacja-hero {
+                    width: 100vw;
+                    height: 70vw;
+                    background-image: url("hero-1.png");
+                    background-size: cover;      /* wypełnia cały ekran */
+                    background-position: center; /* centruje */
+                    background-repeat: no-repeat;
+                    margin: 5vw auto;
+                    box-shadow: 1px 1px 5px #000000;
+                }
+            
+                .lokalizacja-center-text {
+                    width: 100vw;
+                    height: 70vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+                .lokalizacja-center-text p {
+                    font-size: 8vw;
+                    text-align: center;
+                    color: #f4efe6;
+                    margin: 5px;
+                    text-shadow: 1px 1px 5px #000000;
+                }
+
+                .address {
+                    color: #2e2d2d;
+                    font-size: 4vw;
+                    margin: 7vw;
+                }
+            
+                .lokalizacja-text{
+                    color: #2e2d2d;
+                    font-size: 4vw;
+                    margin: 5vw 15vw;
+                    text-align: justify;
+                    line-height: 1.5;
+                }
+            }
 
     /* RSVP */
 
     #rsvp-hero {
         width: 100vw;
-        height: 10vw;
-        background-image: url("RSVP-hero.jpg");
+        height: 30vw;
+        background-image: url("hero-2.png");
         background-size: cover;      /* wypełnia cały ekran */
         background-position: center; /* centruje */
         background-repeat: no-repeat;
@@ -185,7 +264,7 @@ button {
 
     .rsvp-center-text {
         width: 100vw;
-        height: 10vw;
+        height: 30vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -194,7 +273,7 @@ button {
     .rsvp-center-text p {
         font-size: 3vw;
         text-align: center;
-        color: white;
+        color: #f4efe6;
         margin: 5px;
         text-shadow: 1px 1px 5px #000000;
     }
@@ -213,7 +292,6 @@ button {
         margin: 5vw 10vw;
         text-align: left;
         line-height: 1.5;
-        letter-spacing: 1.5px;
     }
 
 
@@ -223,21 +301,89 @@ button {
     }
 
     #RSVP-image {
-        width: 8vw;
-        height: 8vw;
-        background-image: url(RSVP-hero.jpg);
+        width: 5vw;
+        height: 5vw;
+        background-image: url(QR-code.png);
         background-size: cover;      /* wypełnia cały ekran */
         background-position: center; /* centruje */
         background-repeat: no-repeat;
         padding: 10vw;
+        border: 1px solid #605032;
+        box-shadow: 1px 1px 5px #000000;
     }
+
+            /* MOBILE RSVP */
+            @media only screen and (max-width: 767px) {
+                #rsvp-hero {
+                    width: 100vw;
+                    height: 70vw;
+                    background-image: url("hero-2.png");
+                    background-size: cover;      /* wypełnia cały ekran */
+                    background-position: center; /* centruje */
+                    background-repeat: no-repeat;
+                    margin: 5vw 0;
+                    box-shadow: 1px 1px 5px #000000;
+                }
+            
+                .rsvp-center-text {
+                    width: 100vw;
+                    height: 70vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+                .rsvp-center-text p {
+                    font-size: 8vw;
+                    text-align: center;
+                    color: #f4efe6;
+                    margin: 5px;
+                    text-shadow: 1px 1px 5px #000000;
+                }
+
+                .RSVP-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+            
+                #RSVP-text {
+                    width: 70vw;
+                    height: auto;
+                    color: #2e2d2d;
+                    font-size: 4vw;
+                    text-align: justify;
+                    line-height: 1.5;
+                    margin-top: -8vw;
+                }
+            
+            
+                #RSVP-QR {
+                    width: 25vw;
+                    height: 25vw;
+                    padding: 4vw;
+                }
+            
+                #RSVP-image {
+                    width: 5vw;
+                    height: 5vw;
+                    background-image: url(QR-code.png);
+                    background-size: cover;      /* wypełnia cały ekran */
+                    background-position: center; /* centruje */
+                    background-repeat: no-repeat;
+                    padding: 10vw;
+                    border: 1px solid #605032;
+                    box-shadow: 1px 1px 5px #000000;
+                }
+            }
 
     /* Kontakt */
 
     #kontakt-hero {
         width: 100vw;
-        height: 10vw;
-        background-image: url("kontakt-hero.jpg");
+        height: 30vw;
+        background-image: url("hero-add.jpeg");
         background-size: cover;      /* wypełnia cały ekran */
         background-position: center; /* centruje */
         background-repeat: no-repeat;
@@ -247,7 +393,7 @@ button {
 
     .kontakt-center-text {
         width: 100vw;
-        height: 10vw;
+        height: 30vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -256,7 +402,7 @@ button {
     .kontakt-center-text p {
         font-size: 3vw;
         text-align: center;
-        color: white;
+        color: #f4efe6;
         margin: 5px;
         text-shadow: 1px 1px 5px #000000;
     }
@@ -275,7 +421,6 @@ button {
         text-align: left;
         line-height: 1.5;
         padding-top: 5vw 0;
-        letter-spacing: 1.5px;
     }
 
     #column2 {
@@ -286,37 +431,119 @@ button {
         text-align: left;
         line-height: 1.5;
         padding: 5vw 0;
-        letter-spacing: 1.5px;
     }
 
     #column3 {
         width: 20vw;
         height: 20vw;
-        background-image: url(kontakt-hero.jpg);
+        background-image: url(pearl.jpeg);
         background-size: cover;      /* wypełnia cały ekran */
         background-position: center; /* centruje */
         background-repeat: no-repeat;
         margin-top: 5vw 0;
         border-radius: 50%;
+        border: 2px solid #605032;
+        box-shadow: 1px 1px 5px #000000;
     }
 
     .kontakt-hl {
         font-size: 1.8vw;
-        letter-spacing: 2.5px;
         color: #2e2d2d;
     }
 
 
     a {
-        color: #2e2d2d;
+        color: #605032;
     }
+
+            /* MOBILE KONTAKT */
+            @media only screen and (max-width: 767px) {
+                #kontakt-hero {
+                    width: 100vw;
+                    height: 70vw;
+                    background-image: url("hero-add.jpeg");
+                    background-size: cover;      /* wypełnia cały ekran */
+                    background-position: center; /* centruje */
+                    background-repeat: no-repeat;
+                    margin: 5vw 0;
+                    box-shadow: 1px 1px 5px #000000;
+                }
+            
+                .kontakt-center-text {
+                    width: 100vw;
+                    height: 70vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+                .kontakt-center-text p {
+                    font-size: 8vw;
+                    text-align: center;
+                    color: #f4efe6;
+                    margin: 5px;
+                    text-shadow: 1px 1px 5px #000000;
+                }
+
+                .kontakt-container {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+                #column1 {
+                    width: 40vw;
+                    height: 40vw;
+                    color: #2e2d2d;
+                    font-size: 4vw;
+                    text-align: left;
+                    line-height: 1.5;
+                    padding: 5vw 0;
+                    flex: 1 50%;
+                    text-align: center;
+                }
+            
+                #column2 {
+                    width: 40vw;
+                    height: 40vw;
+                    color: #2e2d2d;
+                    font-size: 4vw;
+                    text-align: left;
+                    line-height: 1.5;
+                    padding: 5vw 0;
+                    flex: 1 50%;
+                    text-align: center;
+                }
+            
+                #column3 {
+                    width: 40vw;
+                    height: 40vw;
+                    background-image: url(pearl.jpeg);
+                    background-size: cover;      /* wypełnia cały ekran */
+                    background-position: center; /* centruje */
+                    background-repeat: no-repeat;
+                    margin-top: 8vw;
+                    margin-bottom: 8vw;
+                    border-radius: 50%;
+                    border: 2px solid #605032;
+                    box-shadow: 1px 1px 5px #000000;
+
+                }
+            
+                .kontakt-hl {
+                    font-size: 4vw;
+                    color: #2e2d2d;
+                }
+            }
 
     /* Nocleg */
 
     #nocleg-hero {
         width: 100vw;
-        height: 10vw;
-        background-image: url("nocleg-hero.jpeg");
+        height: 30vw;
+        background-image: url("kontakt-hero.jpg");
         background-size: cover;      /* wypełnia cały ekran */
         background-position: center; /* centruje */
         background-repeat: no-repeat;
@@ -326,7 +553,7 @@ button {
 
     .nocleg-center-text {
         width: 100vw;
-        height: 10vw;
+        height: 30vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -335,7 +562,7 @@ button {
     .nocleg-center-text p {
         font-size: 3vw;
         text-align: center;
-        color: white;
+        color: #f4efe6;
         margin: 5px;
         text-shadow: 1px 1px 5px #000000;
     }
@@ -343,18 +570,76 @@ button {
     .nocleg-text p {
         color: #2e2d2d;
         font-size: 1.5vw;
-        margin: 5vw 10vw;
+        margin: 5vw 20vw;
         text-align: center;
         line-height: 1.5;
-        letter-spacing: 1.5px;
     }
+
+    .mapa {
+        width: 60vw;
+        height: 30vw;
+        margin: auto;
+        background-image: url(mapa.png);
+        background-size: cover;      /* wypełnia cały ekran */
+        background-position: center; /* centruje */
+        background-repeat: no-repeat;
+    }
+
+            /* MOBILE NOCLEG */
+            @media only screen and (max-width: 767px) {
+                #nocleg-hero {
+                    width: 100vw;
+                    height: 70vw;
+                    background-image: url("kontakt-hero.jpg");
+                    background-size: cover;      /* wypełnia cały ekran */
+                    background-position: center; /* centruje */
+                    background-repeat: no-repeat;
+                    margin: 5vw 0;
+                    box-shadow: 1px 1px 5px #000000;
+                }
+            
+                .nocleg-center-text {
+                    width: 100vw;
+                    height: 70vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+                .nocleg-center-text p {
+                    font-size: 8vw;
+                    text-align: center;
+                    color: #f4efe6;
+                    margin: 5px;
+                    text-shadow: 1px 1px 5px #000000;
+                }
+
+                .nocleg-text p {
+                    color: #2e2d2d;
+                    font-size: 4vw;
+                    margin: 8vw 15vw;
+                    text-align: justify;
+                    line-height: 1.5;
+                }
+            
+                .mapa {
+                    width: 90vw;
+                    height: 45vw;
+                    margin: auto;
+                    background-image: url(mapa.png);
+                    background-size: cover;      /* wypełnia cały ekran */
+                    background-position: center; /* centruje */
+                    background-repeat: no-repeat;
+                }
+            }
+
 
     /* Harmonogram */
 
     #harmonogram-hero {
         width: 100vw;
-        height: 10vw;
-        background-image: url("nocleg-hero.jpeg");
+        height: 30vw;
+        background-image: url("hero-3.png");
         background-size: cover;      /* wypełnia cały ekran */
         background-position: center; /* centruje */
         background-repeat: no-repeat;
@@ -364,7 +649,7 @@ button {
 
     .harmonogram-center-text {
         width: 100vw;
-        height: 10vw;
+        height: 30vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -373,7 +658,7 @@ button {
     .harmonogram-center-text p {
         font-size: 3vw;
         text-align: center;
-        color: white;
+        color: #f4efe6;
         margin: 5px;
         text-shadow: 1px 1px 5px #000000;
     }
@@ -384,22 +669,54 @@ button {
         margin: 5vw 10vw;
         text-align: center;
         line-height: 1.5;
-        letter-spacing: 1.5px;
     }
 
-    #center-map {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 4vw;
-    }
+    
+
+            /* MOBILE HARMONOGRAM */
+            @media only screen and (max-width: 767px) {
+                #harmonogram-hero {
+                    width: 100vw;
+                    height: 70vw;
+                    background-image: url("hero-3.png");
+                    background-size: cover;      /* wypełnia cały ekran */
+                    background-position: center; /* centruje */
+                    background-repeat: no-repeat;
+                    margin: 5vw 0;
+                    box-shadow: 1px 1px 5px #000000;
+                }
+            
+                .harmonogram-center-text {
+                    width: 100vw;
+                    height: 70vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+                .harmonogram-center-text p {
+                    font-size: 8vw;
+                    text-align: center;
+                    color: #f4efe6;
+                    margin: 5px;
+                    text-shadow: 1px 1px 5px #000000;
+                }
+
+                .harmonogram-text p {
+                    color: #2e2d2d;
+                    font-size: 4vw;
+                    margin: 8vw 15vw;
+                    text-align: justify;
+                    line-height: 1.5;
+                }
+            }
 
      /* Parking */
 
      #parking-hero {
         width: 100vw;
-        height: 10vw;
-        background-image: url("nocleg-hero.jpeg");
+        height: 30vw;
+        background-image: url("hero-6.jpeg");
         background-size: cover;      /* wypełnia cały ekran */
         background-position: center; /* centruje */
         background-repeat: no-repeat;
@@ -409,7 +726,7 @@ button {
 
     .parking-center-text {
         width: 100vw;
-        height: 10vw;
+        height: 30vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -418,7 +735,7 @@ button {
     .parking-center-text p {
         font-size: 3vw;
         text-align: center;
-        color: white;
+        color: #f4efe6;
         margin: 5px;
         text-shadow: 1px 1px 5px #000000;
     }
@@ -429,7 +746,6 @@ button {
         margin: 5vw 10vw;
         text-align: center;
         line-height: 1.5;
-        letter-spacing: 1.5px;
     }
 
     #center-map {
@@ -437,14 +753,69 @@ button {
         justify-content: center;
         align-items: center;
         padding-bottom: 4vw;
+        width: 100vw; 
+        height: 30vw;
     }
+
+
+            /* MOBILE PARKING */
+
+            @media only screen and (max-width: 767px) {
+                #parking-hero {
+                    width: 100vw;
+                    height: 70vw;
+                    background-image: url("hero-6.jpeg");
+                    background-size: cover;      /* wypełnia cały ekran */
+                    background-position: center; /* centruje */
+                    background-repeat: no-repeat;
+                    margin: 5vw 0;
+                    box-shadow: 1px 1px 5px #000000;
+                }
+            
+                .parking-center-text {
+                    width: 100vw;
+                    height: 70vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+                .parking-center-text p {
+                    font-size: 8vw;
+                    text-align: center;
+                    color: #f4efe6;
+                    margin: 5px;
+                    text-shadow: 1px 1px 5px #000000;
+                }
+
+                .parking-text p {
+                    color: #2e2d2d;
+                    font-size: 4vw;
+                    margin: 8vw 15vw;
+                    text-align: justify;
+                    line-height: 1.5;
+                }
+            
+                #center-map {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 90vw; 
+                    height: 60vw;
+                    margin: auto;
+                }
+
+                #center-map iframe {
+                    height: 60vw !important;
+                }
+            }
 
     /* Dzieci */
 
     #dzieci-hero {
         width: 100vw;
-        height: 10vw;
-        background-image: url("nocleg-hero.jpeg");
+        height: 30vw;
+        background-image: url("hero-7.jpg");
         background-size: cover;      /* wypełnia cały ekran */
         background-position: center; /* centruje */
         background-repeat: no-repeat;
@@ -454,7 +825,7 @@ button {
 
     .dzieci-center-text {
         width: 100vw;
-        height: 10vw;
+        height: 30vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -463,7 +834,7 @@ button {
     .dzieci-center-text p {
         font-size: 3vw;
         text-align: center;
-        color: white;
+        color: #f4efe6;
         margin: 5px;
         text-shadow: 1px 1px 5px #000000;
     }
@@ -471,18 +842,56 @@ button {
     .dzieci-text p {
         color: #2e2d2d;
         font-size: 1.5vw;
-        margin: 5vw 10vw;
+        margin: 5vw 20vw;
         text-align: center;
         line-height: 1.5;
-        letter-spacing: 1.5px;
     }
+
+            /* MOBILE DZIECI */
+            @media only screen and (max-width: 767px) {
+                #dzieci-hero {
+                    width: 100vw;
+                    height: 70vw;
+                    background-image: url("hero-7.jpg");
+                    background-size: cover;      /* wypełnia cały ekran */
+                    background-position: center; /* centruje */
+                    background-repeat: no-repeat;
+                    margin: 5vw 0;
+                    box-shadow: 1px 1px 5px #000000;
+                }
+            
+                .dzieci-center-text {
+                    width: 100vw;
+                    height: 70vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+                .dzieci-center-text p {
+                    font-size: 8vw;
+                    text-align: center;
+                    color: #f4efe6;
+                    margin: 5px;
+                    text-shadow: 1px 1px 5px #000000;
+                }
+
+                .dzieci-text p {
+                    color: #2e2d2d;
+                    font-size: 4vw;
+                    margin: 8vw 15vw;
+                    text-align: justify;
+                    line-height: 1.5;
+                }
+            }
+
 
     /* Dress Code */
 
     #dresscode-hero {
         width: 100vw;
-        height: 10vw;
-        background-image: url("nocleg-hero.jpeg");
+        height: 30vw;
+        background-image: url("hero-5.jpeg");
         background-size: cover;      /* wypełnia cały ekran */
         background-position: center; /* centruje */
         background-repeat: no-repeat;
@@ -492,7 +901,7 @@ button {
 
     .dresscode-center-text {
         width: 100vw;
-        height: 10vw;
+        height: 30vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -501,7 +910,7 @@ button {
     .dresscode-center-text p {
         font-size: 3vw;
         text-align: center;
-        color: white;
+        color: #f4efe6;
         margin: 5px;
         text-shadow: 1px 1px 5px #000000;
     }
@@ -520,7 +929,6 @@ button {
         margin: 5vw 10vw;
         text-align: left;
         line-height: 1.5;
-        letter-spacing: 1.5px;
     }
 
 
@@ -538,12 +946,81 @@ button {
         background-repeat: no-repeat;
         padding: 10vw;
         border-radius: 50%;
+        border: 2px solid #605032;
+        box-shadow: 1px 1px 5px #000000;
     }
+
+            /* MOBILE DRESSCODE */
+            @media only screen and (max-width: 767px) {
+                #dresscode-hero {
+                    width: 100vw;
+                    height: 70vw;
+                    background-image: url("hero-5.jpeg");
+                    background-size: cover;      /* wypełnia cały ekran */
+                    background-position: center; /* centruje */
+                    background-repeat: no-repeat;
+                    margin: 5vw 0;
+                    box-shadow: 1px 1px 5px #000000;
+                }
+            
+                .dresscode-center-text {
+                    width: 100vw;
+                    height: 70vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+                .dresscode-center-text p {
+                    font-size: 8vw;
+                    text-align: center;
+                    color: #f4efe6;
+                    margin: 5px;
+                    text-shadow: 1px 1px 5px #000000;
+                }
+
+                .dress-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+            
+                #dress-text {
+                    width: 80vw;
+                    height: auto;
+                    color: #2e2d2d;
+                    font-size: 4vw;
+                    margin: 5vw 15vw;
+                    text-align: justify;
+                    line-height: 1.5;
+                }
+            
+            
+                #dress-QR {
+                    width: 100vw;
+                    height: 50vw;
+                    margin: auto;
+                }
+            
+                #dress-image {
+                    width: 40vw;
+                    height: 40vw;
+                    background-image: url(RSVP-hero.jpg);
+                    background-size: cover;      /* wypełnia cały ekran */
+                    background-position: center; /* centruje */
+                    background-repeat: no-repeat;
+                    margin: auto;
+                    border-radius: 50%;
+                    border: 2px solid #605032;
+                    box-shadow: 1px 1px 5px #000000;
+                }
+            }
 
     /* FAQ */
     #faq-hero {
         width: 100vw;
-        height: 10vw;
+        height: 30vw;
         background-image: url("nocleg-hero.jpeg");
         background-size: cover;      /* wypełnia cały ekran */
         background-position: center; /* centruje */
@@ -554,7 +1031,7 @@ button {
 
     .faq-center-text {
         width: 100vw;
-        height: 10vw;
+        height: 30vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -563,10 +1040,40 @@ button {
     .faq-center-text p {
         font-size: 3vw;
         text-align: center;
-        color: white;
+        color: #f4efe6;
         margin: 5px;
         text-shadow: 1px 1px 5px #000000;
     }
+
+        /* FAQ MOBILE */
+        @media only screen and (max-width: 767px) {
+            #faq-hero {
+                width: 100vw;
+                height: 70vw;
+                background-image: url("nocleg-hero.jpeg");
+                background-size: cover;      /* wypełnia cały ekran */
+                background-position: center; /* centruje */
+                background-repeat: no-repeat;
+                margin: 5vw 0;
+                box-shadow: 1px 1px 5px #000000;
+            }
+        
+            .faq-center-text {
+                width: 100vw;
+                height: 70vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .faq-center-text p {
+                font-size: 8vw;
+                text-align: center;
+                color: #f4efe6;
+                margin: 5px;
+                text-shadow: 1px 1px 5px #000000;
+            }
+        }
 
 
     /* akordeon */
@@ -577,27 +1084,26 @@ button {
     }
 
     .accordion {
-        background-color: #FFFFFF;
+        background-color: #f4efe6;
         color: #2e2d2d;
         cursor: pointer;
-        padding: 20px 25px;
+        padding: 20px 35px;
         width: 100%;
         text-align: left;
         border: none;
         outline: none;
         transition: 0.4s;
-        border-bottom: 1px solid #faeac9;
+        border-bottom: 1px solid #605032;
         font-size: 1.5vw;
         font-family: inherit;
-        letter-spacing: 1.5px;
       }
       
       .active1, .accordion:hover {
-        color: #2c772c;
+        color: #605032;
       }
       .panel {
         padding: 0px 25px;
-        background-color: white;
+        background-color: #f4efe6;
         max-height: 0px;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
@@ -613,14 +1119,71 @@ button {
       .accordion:after {
         content: "\002B"; /* Unicode character for "plus" sign (+) */
         font-size: 18px;
-        color: #2e2d2d;
+        color: #605032;
         float: right;
         margin-left: 5px;
       }
       .active1:after {
         content: "\2212"; /* Unicode character for "minus" sign (-) */
-        color: #2c772c;
+        color: #605032;;
       }
+
+            /* MOBILE ACCORDEON */
+            @media only screen and (max-width: 767px) {
+                #acc {
+                    width: 90vw;
+                    margin: auto;
+                }
+            
+                .accordion {
+                    background-color: #f4efe6;
+                    color: #2e2d2d;
+                    cursor: pointer;
+                    padding: 20px 35px;
+                    width: 100%;
+                    text-align: left;
+                    border: none;
+                    outline: none;
+                    transition: 0.4s;
+                    border-bottom: 1px solid #605032;
+                    font-size: 4vw;
+                    font-family: inherit;
+                  }
+
+                  .accordion text {
+                    width: 95%;
+                  }
+                  
+                  .active1, .accordion:hover {
+                    color: #605032;
+                  }
+                  .panel {
+                    padding: 0px 25px;
+                    background-color: #f4efe6;
+                    max-height: 0px;
+                    overflow: hidden;
+                    transition: max-height 0.2s ease-out;
+                  }
+                  .panel p{
+                    padding: 20px 0px;
+                    color: #2e2d2d;
+                    font-size: 3.8vw;
+                    text-align: left;
+                    line-height: 1.7;
+                    font-family: inherit;
+                  }
+                  .accordion:after {
+                    content: "\002B"; /* Unicode character for "plus" sign (+) */
+                    font-size: 18px;
+                    color: #605032;
+                    float: right;
+                    margin-left: 5px;
+                  }
+                  .active1:after {
+                    content: "\2212"; /* Unicode character for "minus" sign (-) */
+                    color: #605032;;
+                  }
+            }
 
       .uwaga {
         color: #2e2d2d;
@@ -628,7 +1191,6 @@ button {
         margin: 5vw;
         text-align: left;
         line-height: 1.5;
-        word-spacing: 2;
       }
 
       .uwaga strong {
@@ -638,7 +1200,7 @@ button {
       #bye-hero {
         width: 100vw;
         height: 30vw;
-        background-image: url("nocleg-hero.jpeg");
+        background-image: url("hero-9.png");
         background-size: cover;      /* wypełnia cały ekran */
         background-position: center; /* centruje */
         background-repeat: no-repeat;
@@ -657,8 +1219,51 @@ button {
     .bye-center-text p {
         font-size: 3vw;
         text-align: center;
-        color: white;
+        color: #f4efe6;
         margin: 5px;
         text-shadow: 1px 1px 5px #000000;
+    }
+
+    /* MOBILE POEGNANIE */
+
+    @media only screen and (max-width: 767px) {
+        #bye-hero {
+            width: 100vw;
+            height: 70vw;
+            background-image: url("hero-9.png");
+            background-size: cover;      /* wypełnia cały ekran */
+            background-position: center; /* centruje */
+            background-repeat: no-repeat;
+            margin-top: 5vw;
+            box-shadow: 1px 1px 5px #000000;
+        }
+    
+        .bye-center-text {
+            width: 100vw;
+            height: 70vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .bye-center-text p {
+            font-size: 8vw;
+            text-align: center;
+            color: #f4efe6;
+            margin: 5px;
+            text-shadow: 1px 1px 5px #000000;
+        }
+
+        .uwaga {
+            color: #2e2d2d;
+            font-size: 4vw;
+            margin: 10vw 10vw;
+            text-align: justify;
+            line-height: 1.5;
+          }
+    
+          .uwaga strong {
+            font-size: 4.2vw;
+          }
     }
 
