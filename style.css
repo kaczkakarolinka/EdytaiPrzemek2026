@@ -124,6 +124,14 @@ button {
             /* HERO MOBILE */
 
             @media only screen and (max-width: 767px) {
+                .center-text {
+                    width: 100vw;
+                    height: 90vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                }
+
                 #hero-text-1 {
                     font-size: 15vw;
                     text-align: center;
@@ -163,7 +171,7 @@ button {
     #lokalizacja-hero {
         width: 100vw;
         height: 30vw;
-        background-image: url("hero-1.png");
+        background-image: url("hero-lokalizatione.png");
         background-size: cover;      /* wypełnia cały ekran */
         background-position: center; /* centruje */
         background-repeat: no-repeat;
