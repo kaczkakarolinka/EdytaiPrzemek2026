@@ -726,13 +726,31 @@ button {
                     text-shadow: 1px 1px 5px #000000;
                 }
 
-                .harmonogram-text p {
+                .harmonogram-text {
+                color: #2e2d2d;
+                font-size: 1.5vw;
+                margin: 8vw 15vw;
+                text-align: center;
+                line-height: 1.5;
+            }
+
+                .harmonogram-text ul {
                     color: #2e2d2d;
                     font-size: 4vw;
                     margin: 8vw 15vw;
-                    text-align: justify;
                     line-height: 1.5;
+                    display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 25px;
                 }
+            
+                .harmonogram-text ul li {
+                    width: fit-content;
+                    font-size: 4vw;
+                }
+
+                
             }
 
      /* Parking */
