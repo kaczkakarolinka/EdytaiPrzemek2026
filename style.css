@@ -671,7 +671,7 @@ button {
         text-shadow: 1px 1px 5px #000000;
     }
 
-    .harmonogram-text p {
+    .harmonogram-text ul {
         color: #2e2d2d;
         font-size: 1.5vw;
         margin: 5vw 10vw;
