@@ -685,6 +685,7 @@ button {
         margin: 5vw 10vw;
         text-align: center;
         line-height: 1.5;
+        list-style-position: inside;
     }
 
     .harmonogram-text ul li {
